@@ -2,56 +2,48 @@ package solutions.grind75.week3;
 
 class kClosest {
     public int[][] kClosest(int[][] points, int k) {
-        PriorityQueue<PointAndDistance> heap = new PriorityQueue<>(new PointAndDistanceComparator());
-
-        for (int[] point : points) {
-            double distance = calcDistance(point);
-            heap.add(new PointAndDistance(point, distance));
+        PriorityQueue<Point> pointQueue = new PriorityQueue<>(new PointsComparator());
+    
+        for (int i = 0; i < points.length; i++) {
+            int[] point = points[i];
+            pointQueue.add(new Point(calcDist(point[0], point[1]), point));
         }
 
-        int index = 0;
         int[][] sol = new int[k][2];
 
-        while (index < k) {
-            PointAndDistance curr = heap.poll();
-            sol[index] = curr.getPoint();
-            index++;
+        for (int i = 0; i < k; i++) {
+            Point point = pointQueue.poll();
+            sol[i] = point.getPoint();
         }
 
         return sol;
     }
 
-    private double calcDistance(int[] point) {
-        int x = point[0];
-        int y = point[1];
-
-        return Math.sqrt(x * x + y * y);
+    public double calcDist(int x, int y) {
+        double dist = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+        return dist;
     }
 
-    private class PointAndDistance {
+    public class Point {
+        public double distance;
+        public int[] point;
 
-        int[] point;
-        double distance;
-
-        private PointAndDistance(int[] point, double distance) { 
-            this.point = point;
+        public Point(double distance, int[] point) {
             this.distance = distance;
+            this.point = point;
         }
 
         public int[] getPoint() {
-            return this.point;
-        }
-
-        public double getDistance() {
-            return this.distance;
+            return point;
         }
     }
 
-    private class PointAndDistanceComparator implements Comparator<PointAndDistance> {
-    
+    public class PointsComparator implements Comparator<Point> {
+        
         @Override
-        public int compare(PointAndDistance p1, PointAndDistance p2) {
+        public int compare(Point p1, Point p2) {
             return Double.compare(p1.distance, p2.distance);
         }
     }
 }
+
