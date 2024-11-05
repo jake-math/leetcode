@@ -1,6 +1,6 @@
 package solutions.grind75.week2;
 
-import javax.swing.tree.TreeNode;
+import solutions.util.TreeNode;
 
 public class MaximumDepthOfBinaryTree {
     public int maxDepth(TreeNode root) {

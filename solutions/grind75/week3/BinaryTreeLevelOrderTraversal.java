@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import javax.swing.tree.TreeNode;
+import solutions.util.TreeNode;
 
 public class BinaryTreeLevelOrderTraversal {
     public List<List<Integer>> levelOrder(TreeNode root) {
@@ -33,5 +33,6 @@ public class BinaryTreeLevelOrderTraversal {
 
         return sol;
     }
+
 
 }

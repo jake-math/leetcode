@@ -1,8 +1,9 @@
 package solutions.grind75.week1;
 
-import java.lang.classfile.components.ClassPrinter.ListNode;
 import java.util.ArrayList;
 import java.util.List;
+
+import solutions.util.ListNode;
 
 public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {

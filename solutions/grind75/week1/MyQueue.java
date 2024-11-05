@@ -2,7 +2,7 @@ package solutions.grind75.week1;
 
 import java.util.Stack;
 
-public class ImplementQueueUsingStacks {
+public class MyQueue {
     Stack<Integer> stack;
 
     public MyQueue() {

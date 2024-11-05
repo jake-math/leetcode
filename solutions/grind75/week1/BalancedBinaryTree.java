@@ -3,10 +3,10 @@ package solutions.grind75.week1;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.swing.tree.TreeNode;
+import solutions.util.TreeNode;
 
 public class BalancedBinaryTree {
-       Map<TreeNode, Boolean> isBalanced = new HashMap<>();
+    Map<TreeNode, Boolean> isBalanced = new HashMap<>();
     Map<TreeNode, Integer> nodeHeight = new HashMap<>();
 
     public boolean isBalanced(TreeNode root) {

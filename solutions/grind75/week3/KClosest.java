@@ -1,5 +1,8 @@
 package solutions.grind75.week3;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 class kClosest {
     public int[][] kClosest(int[][] points, int k) {
         PriorityQueue<Point> pointQueue = new PriorityQueue<>(new PointsComparator());

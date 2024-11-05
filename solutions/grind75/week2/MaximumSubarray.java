@@ -1,4 +1,6 @@
-class Solution {
+package solutions.grind75.week2;
+
+public class MaximumSubarray {
     public int maxSubArray(int[] nums) {
         int maxSum = nums[0];
         int currSum = nums[0];

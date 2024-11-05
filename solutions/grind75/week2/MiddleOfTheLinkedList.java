@@ -1,6 +1,6 @@
 package solutions.grind75.week2;
 
-import java.lang.classfile.components.ClassPrinter.ListNode;
+import solutions.util.ListNode;
 
 public class MiddleOfTheLinkedList {
     public ListNode middleNode(ListNode head) {

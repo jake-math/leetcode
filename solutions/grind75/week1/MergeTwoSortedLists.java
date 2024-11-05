@@ -1,6 +1,6 @@
 package solutions.grind75.week1;
 
-import java.lang.classfile.components.ClassPrinter.ListNode;
+import solutions.util.ListNode;
 
 public class MergeTwoSortedLists {
         public ListNode mergeTwoLists(ListNode list1, ListNode list2) {

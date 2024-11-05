@@ -1,6 +1,6 @@
 package solutions.grind75.week1;
 
-import javax.swing.tree.TreeNode;
+import solutions.util.TreeNode;
 
 public class LowestCommonAncestorBST {
     private TreeNode lca = new TreeNode();

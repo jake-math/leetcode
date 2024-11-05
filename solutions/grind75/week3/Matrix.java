@@ -1,6 +1,6 @@
 package solutions.grind75.week3;
 
-class 01Matrix {
+class Matrix {
 
     private int m;
     private int n;
