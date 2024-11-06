@@ -1,5 +1,7 @@
 package solutions.grind75.week2;
 
+import solutions.util.TreeNode;
+
 public class DiameterOfBinaryTree {
     
     private int diameter;

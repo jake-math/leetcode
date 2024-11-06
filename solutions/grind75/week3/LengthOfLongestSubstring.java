@@ -1,6 +1,9 @@
 package solutions.grind75.week3;
 
-public class lengthOfLongestSubstring {
+import java.util.HashSet;
+import java.util.Set;
+
+public class LengthOfLongestSubstring {
     public int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) {
             return 0;

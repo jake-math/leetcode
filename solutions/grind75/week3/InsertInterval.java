@@ -1,5 +1,8 @@
 package solutions.grind75.week3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class InsertInterval {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         List<int[]> solution = new ArrayList<>();
