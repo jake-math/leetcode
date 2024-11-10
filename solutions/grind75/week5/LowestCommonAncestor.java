@@ -1,5 +1,7 @@
 package solutions.grind75.week5;
 
+import solutions.util.TreeNode;
+
 public class LowestCommonAncestor {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q) return root;

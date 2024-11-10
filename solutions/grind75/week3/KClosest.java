@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 class kClosest {
-    public int[][] kClosest(int[][] points, int k) {
+    public int[][] KClosest(int[][] points, int k) {
         PriorityQueue<Point> pointQueue = new PriorityQueue<>(new PointsComparator());
     
         for (int i = 0; i < points.length; i++) {

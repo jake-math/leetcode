@@ -1,4 +1,4 @@
-package solutions.grind75.week6;
+package solutions.grind75.week7;
 
 import java.util.ArrayList;
 import java.util.List;
